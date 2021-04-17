@@ -89,18 +89,15 @@ function draw() {
 }
 
 function mousePressed() {
-    if(gameState !== "end" && mouseY < 75) {
+    if(gameState !== "end") {
         turns++;
         
-            particleArray.push(new Particle(mouseX, 10,10));
-            score++;
+        var newParticle = new Particle(mouseX, 10, 10);
         
         
-        for (var j = 0; j < particleArray.length; j++) {
-          
-            particleArray[j].display();
-        }
+        
     }
 }
+
 
 
